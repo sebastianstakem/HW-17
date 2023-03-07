@@ -1,0 +1,130 @@
+header {
+    position: relative;
+    height: 600px;
+  }
+  
+  nav {
+    color: beige;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #322f2f;
+    display: block;
+    font-size: 16px;
+    padding: 20px 15px;
+    text-decoration: none;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+  }
+  
+  nav ul li:hover > ul {
+    display:inherit;
+  }
+  
+  nav ul ul li {
+    width: 200px;
+    float:none;
+    display:list-item;
+    position: relative;
+  }
+  
+  nav ul ul ul li {
+    position: relative;
+    top:-60px;
+    left:200px;
+  }
+  
+  nav a:hover, nav ul ul ul a{
+    background-color:#ff7c7c;
+    color:#241b1b;
+  }
+  
+  nav ul ul li:hover > ul {
+    display:inherit;
+  }
+  
+  .hero-image {
+    background-image: url(image.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: auto;
+    color: #242424;
+    font-size: 5rem;
+  }
+  footer {
+    background-color: #222;
+    color: #FDFFA0;
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 200;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 500px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+  }
+  
+  .social-icons a:hover {
+    background-color: #fff;
+    color: #222;
+  }
+  
